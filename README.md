@@ -98,7 +98,7 @@ directory <- "C:/Users/map05/Documents/Silconvalley"
 electricity <- read.table("household_power_consumption.txt", header = T,  sep=";", comment.char="%", stringsAsFactors=FALSE, na.strings="?")
 dataplott<- subset(electricity, electricity$Date=="1/2/2007"|electricity$Date=="2/2/2007") 
 hist(subset(Nudataplott)$Global_active_power,xlab = "Global Active Power(kilowatts)",  col = "red", main = "Global Active Power")
-![plot of chunk unnamed-chunk-2](figure/unnamed-chunk-2.png) 
+![plot of chunk unnamed-chunk-2](unnamed-chunk-2.png) 
 
 
 ### Plot 2
@@ -107,7 +107,7 @@ electricity <- read.table("household_power_consumption.txt", header = T,  sep=";
 dataplott<- subset(electricity, electricity$Date=="1/2/2007"|electricity$Date=="2/2/2007") 
 
 plot(Nudataplott$datetimer, Nudataplott$Global_active_power, type="l", xlab ="datetime", pch=22,ylab= "Global Active Power (kilowatts)")
-![plot of chunk unnamed-chunk-3](figure/unnamed-chunk-3.png) 
+![plot of chunk unnamed-chunk-3](unnamed-chunk-3.png) 
 
 
 ### Plot 3
@@ -128,7 +128,7 @@ plot(sub_metering$datetimmed, sub_metering$submeter1, type="l", col="black", yli
 lines(sub_metering$datetimmed,sub_metering$submeter2, type ="l", col="red")
 lines(sub_metering$datetimmed,sub_metering$submeter3, type= "l", col="blue")
 legend("topright", pch =1, col= c("black", "red", "blue"), legend =c("sub_metering_1", "sub_metering_2", "sub_metering_3")) 
-![plot of chunk unnamed-chunk-4](figure/unnamed-chunk-4.png) 
+![plot of chunk unnamed-chunk-4](unnamed-chunk-4.png) 
 
 
 ### Plot 4
@@ -158,5 +158,5 @@ legend("topright", pch =1, col= c("black", "red", "blue"), legend =c("sub_meteri
 
 plot(Nudataplott$datetimer,Nudataplott$Global_reactive_power,type="l", xlab="datetime", ylab = "Global Reactive Power")
 
-![plot of chunk unnamed-chunk-5](figure/unnamed-chunk-5.png) 
+![plot of chunk unnamed-chunk-5](unnamed-chunk-5.png) 
 
